@@ -1,0 +1,64 @@
+.container {
+  padding-left: 0;
+  margin-left: 0;
+  position: relative;
+}
+.logo {
+  display: flex;
+  width: 30px;
+  height: 60px;
+  object-fit: cover;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.element {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.link {
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 10px;
+  color: rgb(9, 9, 9);
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.slide {
+  height: 100vh;
+  margin-top: -60px;
+  position: relative;
+}
+
+.slide .element .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  overflow: hidden;
+}
+
+.container .slide .item {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
