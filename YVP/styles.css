@@ -1,8 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+* {
+  box-sizing: border-box; /* Include padding and borders within width and height */
+}
+
 .container {
   padding-left: 0;
   margin-left: 0;
   position: relative;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  max-width: 100%; /* Ensure container doesn't exceed viewport width */
+  max-height: 100%; /* Ensure container doesn't exceed viewport height */
 }
+
 .logo {
   display: flex;
   width: 30px;
@@ -21,7 +38,6 @@ header {
 .element {
   display: flex;
   justify-content: space-between;
-  display: flex;
   flex-grow: 1;
   align-items: center;
 }
@@ -44,21 +60,30 @@ a {
 }
 
 .slide {
-  height: 100vh;
-  margin-top: -60px;
-  position: relative;
+  height: 100vh; /* Full viewport height */
+  position: relative; /* Children will be positioned relative to this */
+  overflow: hidden; /* Hide anything outside of the container */
 }
 
-.slide .element .item {
-  position: absolute;
-  inset: 0 0 0 0;
-  overflow: hidden;
+.slide .list {
+  display: flex; /* Align items in a row (optional) */
+  height: 100%; /* Full height for the entire list */
+  width: 300%; /* Make it wide enough to hold all items */
+  transform: translateX(-100%); /* Shift to show the middle item */
 }
 
-.container .slide .item {
-  background-position: 50% 50%;
-  background-size: cover;
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
+.slide .item {
+  width: 100vw; /* Each item should take up one full viewport width */
+  height: 100vh; /* Each item should take up one full viewport height */
+  position: relative; /* Allows for absolute positioning of inner elements */
+}
+
+.slide .item img {
+  width: 100%; /* Ensure the image fills the width */
+  height: 100%; /* Ensure the image fills the height */
+  object-fit: cover; /* Cover the entire space without stretching */
+}
+
+.slide .list .item:not(.active) {
+  display: none; /* Only display the active (middle) item */
 }
