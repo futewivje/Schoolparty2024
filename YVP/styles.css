@@ -71,7 +71,7 @@ header .menu {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient(to top, #000 40%, transparent);
+  background-image: linear-gradient(to top, #000 20%, transparent);
 }
 
 .slider .list .item .content {
@@ -105,8 +105,8 @@ header .menu {
 .slider .list .item .content h2 {
   font-size: 100px;
   margin: 0;
-  transition: transform 2s ease-in-out, filter 2s ease-in-out,
-    opacity 2s ease-in-out; /* Same speed as content */
+  transition: transform 2s ease-in-out, filter 2.5s ease-in-out,
+    opacity 2s ease-in-out;
 }
 
 .slider .list .item.active {
@@ -128,7 +128,7 @@ header .menu {
   transform: translateY(30px);
   filter: blur(20px);
   opacity: 0;
-  animation: showContent 2s 2.5s ease-in-out 1 forwards; /* Match speed */
+  animation: showContent 2s 2.5s ease-in-out 1 forwards;
 }
 
 .slider .list .item.active p:nth-child(3) {
