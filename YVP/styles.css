@@ -219,3 +219,15 @@ header .menu {
     top: 10%;
   }
 }
+
+/* Adjust the default size for h2 */
+.slider .list .item .content h2 {
+  font-size: 50px; /* Smaller than the original 100px */
+}
+
+/* Further adjustments for smaller screens */
+@media screen and (max-width: 678px) {
+  .slider .list .item .content h2 {
+    font-size: 40px; /* Adjust font size for small screens */
+  }
+}
