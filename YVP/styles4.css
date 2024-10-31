@@ -15,6 +15,8 @@ body {
   background: linear-gradient(-45deg, #2c6cc6, #3333d1, #fdbb2d, #21d4fd);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
 }
 
 @keyframes gradientAnimation {
@@ -63,14 +65,16 @@ body {
   animation: animate 8s linear infinite;
 }
 
-.goals {
+.get {
   margin-top: 20px;
   color: #ffffff;
   font-size: 18px;
   line-height: 1.6;
 }
 
-.goals p {
+.get p {
+  font-size: 1em; /* Larger font size relative to the container */
+  line-height: 1.8; /* Increase line height for better readability */
   margin-bottom: 15px;
 }
 
@@ -92,12 +96,12 @@ body {
 
 @media (max-width: 600px) {
   .title {
-    font-size: 8vw; /* Smaller font size on small screens */
+    font-size: 8vw;
   }
   .text {
-    font-size: 4vw; /* Adjust text size */
+    font-size: 4vw;
   }
   .goals {
-    font-size: 3vw; /* Adjust goals font size */
+    font-size: 3vw;
   }
 }
