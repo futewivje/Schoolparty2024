@@ -231,3 +231,24 @@ header .menu {
     font-size: 40px; /* Adjust font size for small screens */
   }
 }
+
+.button1 {
+  font-size: 16px;
+  transition: font-size 1s ease, color 0.3s ease;
+  width: 15%;
+  padding-left: 15px;
+  background-color: rgb(100, 98, 98);
+  border: none;
+  cursor: pointer;
+  color: rgb(2, 2, 2);
+  border-radius: 20px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  padding-top: 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1:hover {
+  background-color: #aee062;
+}
