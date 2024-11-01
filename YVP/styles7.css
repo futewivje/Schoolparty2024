@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Removes default margin */
+  font-family: Arial, sans-serif; /* Sets a default font */
+  background-color: #f0f0f0; /* Optional: sets a background color */
+}
+
+a {
+  text-decoration: none; /* Removes underline from links */
+  color: #007bff; /* Link color */
+  font-size: 20px; /* Adjust font size as needed */
+  margin: 10px; /* Space between links */
+  padding: 10px 20px; /* Padding for a button-like appearance */
+  border: 1px solid #007bff; /* Optional: adds a border */
+  border-radius: 5px; /* Optional: rounded corners */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+a:hover {
+  background-color: #007bff; /* Change background on hover */
+  color: white; /* Change text color on hover */
+}

@@ -252,3 +252,16 @@ header .menu {
 .button1:hover {
   background-color: #aee062;
 }
+
+.logo-slide {
+  position: absolute; /* Use absolute positioning to place the logo */
+  top: 20px; /* Adjust the top position as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering fix */
+  z-index: 20; /* Ensure it is above other elements */
+}
+
+.logo-img {
+  width: 100px; /* Set a width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
